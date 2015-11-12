@@ -7,7 +7,7 @@
  */
 
 #include "application.h"
-#include "codeline_coap.h"
+#include "codeline-coap/codeline-coap.h"
 
 codeline_coap::codeline_coap(char *layout) {
     strncpy (_layout, layout, sizeof(_layout) -1);
