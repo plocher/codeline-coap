@@ -4,6 +4,7 @@
 
 class codeline_coap {
 public:
+    enum { ROUTE = 0, IGNORE=1, SEEN=2 };
     codeline_coap(char *layout);
 
     int decode(const char *event, const char *data, char *layout, char *type, int *dst, int *src, int *code) {
